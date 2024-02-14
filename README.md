@@ -1,5 +1,3 @@
-      Git Commit Standardization for Games Development body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; } h1 { color: #333; } h2 { color: #666; } p { color: #444; } pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; }
-
 Git Commit Standardization for Games Development
 ================================================
 
