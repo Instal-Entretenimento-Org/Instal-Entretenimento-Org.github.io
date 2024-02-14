@@ -1,16 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-	<head>
-		<meta charset="utf-8">
-		
-		<meta http-equiv='cache-control' content='no-cache'> 
-		<meta http-equiv='expires' content='0'> 
-		<meta http-equiv='pragma' content='no-cache'>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <title>Git Commit Standardization for Games Development</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    h2 {
+      color: #666;
+    }
+    p {
+      color: #444;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Git Commit Standardization for Games Development</h1>
+  
+  <h2>Introduction</h2>
+  <p>This document defines guidelines and conventions for writing commit messages in game development repositories. The main objective is to make the commit history organized and easy to read to facilitate collaboration between development teams and improve code optimization over time.</p>
+  
+  <h2>Commit Message Structure</h2>
+  <pre>
+    &lt;scope (optional)&gt; &lt;type&gt; - &lt;title&gt;
+    &lt;description&gt;
+  </pre>
+  
+  <h2>Types of Commits</h2>
+  <ul>
+    <li><strong>PLAY:</strong> Used for versioning gameplay alterations.</li>
+    <li><strong>GUI:</strong> Used for creating, altering, or changing user interface elements.</li>
+    <li><strong>ENGINE:</strong> Used for backend changes, including code optimizations.</li>
+    <li><strong>TEST:</strong> Used for test alterations.</li>
+    <li><strong>RESOURCE (RESO):</strong> Used when adding a new resource or library to the project.</li>
+    <li><strong>DOCS:</strong> Used for upgrading documentation within the repository.</li>
+    <li><strong>CONFIG (CONF):</strong> Used for configuring project settings.</li>
+    <li><strong>DATAUPDATE (DATUP):</strong> Used for inserting data into the game.</li>
+    <li><strong>BUILD:</strong> Used for alterations to prepare for building the project.</li>
+  </ul>
+  
+  <h2>Type of Scope Additions</h2>
+  <p>Custom scopes can be added to modify the commit context. The default commit without a scope is considered a feature commit. Additional types include:</p>
+  <ul>
+    <li><strong>FIX:</strong> Used for commits fixing a problem.</li>
+    <li><strong>STYLE:</strong> Used for reorganizing without fixing a problem.</li>
+    <li><strong>REFACT:</strong> Used for alterations aimed at optimizing the application.</li>
+  </ul>
+  
+  <h2>Commit Message Optimization</h2>
+  <p>Commits should be separated by type rather than combining changes into a single commit. Avoid unnecessary repetition in commit messages.</p>
+  
+  <h2>Example Commit Messages</h2>
+  <pre>
+    PLAY Player Movement - Add a sample script of the player’s movement.
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">    
-	</head>
-	<body>
-		<h1>Hello World</h1>
-	</body>
+    GUI Main Menu - Create the main menu interface.
+
+    ENGINE Code Optimization - Improve performance by refactoring code.
+
+    TEST Enemy Behavior - Test enemy behavior in different scenarios.
+
+    RESOURCE Character Model - Add a new character model to the game.
+
+    DOCS Update README - Update the project's README file with new information.
+
+    CONFIG Audio Settings - Adjust audio settings for better sound quality.
+
+    DATAUPDATE Level Data - Insert level data into the game.
+
+    BUILD Version 1.0 - Prepare for the release of version 1.0.
+  </pre>
+</body>
 </html>
+
