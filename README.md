@@ -60,3 +60,7 @@ Example Commit Messages
     DATAUPDATE Level Data - Insert level data into the game.
 
     BUILD Version 1.0 - Prepare for the release of version 1.0.
+
+
+
+credits: https://github.com/ayslan-gamedev
